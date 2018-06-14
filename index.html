@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<button id="button" onclick="results()">check</button>
+
+<p id="read"></p>
+<p id="notread"></p>
+
+<script>
+	var library = [
+
+  { author: 'Bill Gates', title: 'The Road Ahead', readingStatus: true },
+
+  { author: 'Steve Jobs', title: 'Walter Isaacson', readingStatus: true },
+
+  { author: 'Suzanne Collins', title:  'Mockingjay: The Final Book of The Hunger Games', readingStatus: false }
+
+];
+
+
+
+   function results() {
+      
+      for (count = 0; count < library.length; count++) {
+
+if (library[count].readingStatus == true) {
+    document.write("Already read " + library[count].title + " by " + library[count].author + "<br>")
+   // document.getElementById(read)= "Already read " + library[count].title + " by " + library[count].author 
+}
+else {
+   document.write("You still need to read " + library[count].title + " by " + library[count].author)
+}
+        // console.log(library[count].author)
+      }
+   	  // if (library[count].readingStatus == true) 
+        
+     
+
+     
+    
+  
+  
+   }
+</script>
+
+</body>
+</html>
+
